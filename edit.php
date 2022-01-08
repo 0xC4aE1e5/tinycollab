@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>tinycollab</h1>
+    <p>You may share this link. Do not share this link to people you don't know.</p>
     <a href="dl.php?f=<?php echo $filename; ?>">download the file</a><br>or<form action="eupload.php" method="post" enctype="multipart/form-data">
         <input type="hidden" name="f" value="<?php echo $filename; ?>">
         <input type="hidden" name="id" value="<?php echo $_GET["f"]; ?>">
