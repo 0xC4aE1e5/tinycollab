@@ -1,5 +1,8 @@
 <?php
-    $filename = glob("*".$_GET["f"]."*")[0];
+    $filename = glob("*.".$_GET["f"].".*")[0];
+    if (!isset($_GET["f"])) {
+        die("ID's corresponding file does not exist. That will break the server. Quitting.");
+    }
 ?>
 
 <!DOCTYPE html>
